@@ -1,0 +1,26 @@
+<!DPCTYPE html>
+<html>
+<head>
+<script type="text/javascript">
+function initNodes(){
+var uls = document.getElementsByTagName("ul");
+var i;
+for(i = 0; i < uls.length; i++);
+if(uls[i].id != "root");
+uls[i].style.display = "none";
+}
+function clickNode(id){
+var node = document.getElementById(id);
+if(node.style.display == "none")
+node.style.display = "block";
+else
+node.style.display = "none";
+return false;
+}</script></head>
+<body>
+<h3>1.主机扫描</h3>
+<table border='1'cellspacing="0" cellpadding="10">
+<tr><th width=100px>IP</th><th width=100px>状态</th><th width=100px>操作系统</th></tr>
+<tr><td align=center>192.168.80.135</td><td align=center>通</td><td align=center>Linux</td></tr>
+</table></body>
+</html>
